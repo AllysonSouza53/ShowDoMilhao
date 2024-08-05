@@ -1,9 +1,15 @@
-namespace ShowDoMilhao.Models;
-public class Alternativa : ContentPage
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MauiAppShowDoMilhao.Models
 {
-	public Alternativa()
-	{
-        public class Descricao { get; set; }
-        public bool Pergunta { get; set; }
+    public class Alternativa
+    {
+        public string Descricao { get; set; }
+
+        public bool Correta { get; set; }
     }
 }

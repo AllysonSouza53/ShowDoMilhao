@@ -1,11 +1,16 @@
-namespace ShowDoMilhao.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Pergunta : ContentPage
+namespace MauiAppShowDoMilhao.Models
 {
-	public Pergunta()
-	{
-        public int ID { get; set; }
+    public class Pergunta
+    {
+        public int Id { get; set; }
         public string Enunciado { get; set; }
-        public List<Alternativa> Alternativas { get; set; }
+
+        public List<Alternativa> Alternativa { get; set; }
     }
 }
