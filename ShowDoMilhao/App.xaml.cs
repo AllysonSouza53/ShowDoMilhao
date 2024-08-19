@@ -747,13 +747,13 @@ namespace MauiAppShowDoMilhao
         public static Pergunta getRandomPerguntaMedio()
         {
             Random r = new Random();
-            int sorteado = r.Next(21, perguntas_medias.Count);
+            int sorteado = r.Next(21, 41);
             return perguntas_medias[sorteado];
         }
         public static Pergunta getRandomPerguntaDificil()
         {
             Random r = new Random();
-            int sorteado = r.Next(41, perguntas_dificeis.Count);
+            int sorteado = r.Next(41, 60);
             return perguntas_dificeis[sorteado];
         }
         public App()
