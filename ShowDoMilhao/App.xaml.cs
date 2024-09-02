@@ -786,11 +786,6 @@ namespace MauiAppShowDoMilhao
 
         static List<Pergunta> perguntas_sorteadas = new();
 
-
-
-        /**
-         * Sorteia uma pergunta fácil entre 1 e 20
-         */
         public static Pergunta getRandomPerguntaFacil()
         {
             Random r = new Random();
@@ -813,9 +808,6 @@ namespace MauiAppShowDoMilhao
             return pergunta_sorteada;
         }
 
-        /**
-         * Sorteia uma pergunta média entre 21 e 41
-         */
         public static Pergunta getRandomPerguntaMedia()
         {
             Random r = new Random();
@@ -838,9 +830,6 @@ namespace MauiAppShowDoMilhao
             return pergunta_sorteada;
         }
 
-        /**
-         * Sorteia uma pergunta dificil entre 1 e 20
-         */
         public static Pergunta getRandomPerguntaDificil()
         {
             Random r = new Random();
@@ -863,9 +852,6 @@ namespace MauiAppShowDoMilhao
             return pergunta_sorteada;
         }
 
-        /**
-         * Sorteia uma pergunta dificil entre 1 e 20
-         */
         public static Pergunta getRandomPerguntaFinal()
         {
             Random r = new Random();
