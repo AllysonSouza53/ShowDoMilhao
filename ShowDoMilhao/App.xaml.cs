@@ -1,4 +1,5 @@
-﻿using MauiAppShowDoMilhao.Models;
+﻿using Android.Views;
+using MauiAppShowDoMilhao.Models;
 using ShowDoMilhao;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -12,7 +13,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 1,
                Enunciado = "Qual é o nome dado ao estado da água em forma de gelo",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa { Correta = false, Descricao = "LÍQUIDO" },
                    new Alternativa { Correta = true, Descricao = "SÓLIDO" },
@@ -24,7 +25,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 2,
                Enunciado = "Quem fundou a fábrica de automóveis Ford?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "HARRISON FORD" },
                    new Alternativa{ Correta = false, Descricao = "GERALD FORD" },
@@ -36,7 +37,7 @@ namespace MauiAppShowDoMilhao
            {
                Id= 3,
                Enunciado = "Quando é comemorado o dia da independência do Brasil?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "21 DE ABRIL" },
                    new Alternativa{ Correta = false, Descricao = "12 DE OUTUBRO" },
@@ -49,7 +50,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 4,
                Enunciado = "Quem foi o grande amor de Julieta?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = true, Descricao = "ROMEU" },
                    new Alternativa{ Correta = false, Descricao = "ORFEU" },
@@ -61,7 +62,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 5,
                Enunciado = "Qual personagem da turma da Mônica tem apenas cinco fios de cabelo?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "MÔNICA" },
                    new Alternativa{ Correta = true, Descricao = "CEBOLINHA" },
@@ -73,7 +74,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 6,
                Enunciado = "O churrasco é considerado uma comida típica de qual estado?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "CEARÁ" },
                    new Alternativa{ Correta = true, Descricao = "RIO GRANDE DO SUL" },
@@ -85,7 +86,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 7,
                Enunciado = "Quem foi o criador dos personagens Pedrinho, Narizinho e Emília?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "MAURÍCIO DE SOUSA" },
                    new Alternativa{ Correta = false, Descricao = "ZIRALDO" },
@@ -97,7 +98,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 8,
                Enunciado = "Quem fundou a Microsoft?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "ULTÃO DE BRUNEI" },
                    new Alternativa{ Correta = false, Descricao = "AKIO MORITA" },
@@ -110,7 +111,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 9,
                Enunciado = "Qual é o nome dado ao pneu reserva do carro?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "CALOTA" },
                    new Alternativa{ Correta = true, Descricao = "ESTEPE" },
@@ -122,7 +123,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 10,
                Enunciado = "Como se chama o lugar onde se guardam vinhos?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa { Correta = true, Descricao = "ADEGA" },
                    new Alternativa { Correta = false, Descricao = "BIBLIOTECA" },
@@ -134,7 +135,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 11,
                Enunciado = "Qual cantor ficou conhecidocomo “o rei do rock”?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "FRANK SINATRA" },
                    new Alternativa{ Correta = false, Descricao = "LITTLE RICHARD" },
@@ -146,7 +147,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 12,
                Enunciado = "Quem é o inimigo do Piu-Piu nos desenhos animados?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "FÉLIX" },
                    new Alternativa{ Correta = false, Descricao = "TOM" },
@@ -158,7 +159,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 13,
                Enunciado = "Onde fica o centro da indústria cinematográfica nos EUA?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "NOVA YORK" },
                    new Alternativa{ Correta = false, Descricao = "LAS VEGAS" },
@@ -170,7 +171,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 14,
                Enunciado = "Em que ano os portugueses descobriram o Brasil?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "1450" },
                    new Alternativa{ Correta = true, Descricao = "1500" },
@@ -182,7 +183,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 15,
                Enunciado = "Qual ator do cinema brasileiro é conhecido por ter unhas enormes?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa { Correta = false, Descricao = "PENADINHO" },
                    new Alternativa { Correta = true, Descricao = "ZÉ DO CAIXÃO" },
@@ -195,7 +196,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 16,
                Enunciado = "O violoncelo é um tipo de instrumento de?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "SOPRO" },
                    new Alternativa{ Correta = true, Descricao = "CORDAS" },
@@ -207,7 +208,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 17,
                Enunciado = "Qual é a área da medicina que trata de crianças?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "GERIATRIA" },
                    new Alternativa{ Correta = true, Descricao = "PEDIATRIA" },
@@ -219,7 +220,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 18,
                Enunciado = "O dromedário tem quantas corcovas?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa { Correta = true, Descricao = "UMA" },
                    new Alternativa { Correta = false, Descricao = "DUAS" },
@@ -231,7 +232,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 19,
                Enunciado = "Qual foi o nome dado ao movimento liderado por Tiradentes?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "REVOLUÇÃO FRANCESA" },
                    new Alternativa{ Correta = false, Descricao = "GUERRA DOS EMBOABAS" },
@@ -243,7 +244,7 @@ namespace MauiAppShowDoMilhao
            {
                Id = 20,
                Enunciado = "Quantos titulares possui uma equipe de vôlei?",
-               Alternativas = new()
+               Alternativa = new()
                {
                    new Alternativa{ Correta = false, Descricao = "CINCO" },
                    new Alternativa{ Correta = true, Descricao = "SEIS" },
@@ -259,7 +260,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 21,
                 Enunciado = "A cidade de Pompéia, que foi soterrada por um vulcão fica em qual desses países?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "JAPÃO" },
                     new Alternativa{ Correta = false, Descricao = "MÉXICO" },
@@ -271,7 +272,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 22,
                 Enunciado = "Como eram chamados os pilotos suicidas da Segunda Guerra?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "CAMICASES" },
                     new Alternativa{ Correta = false, Descricao = "SASHIMIS" },
@@ -284,7 +285,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 23,
                 Enunciado = "Como é chamada a cantora que representa o papel principal em uma ópera?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "PRIMEIRA DAMA" },
                     new Alternativa{ Correta = false, Descricao = "DONA-PRIMA" },
@@ -296,7 +297,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 24,
                 Enunciado = "Peroba é uma espécie de?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "INSETO" },
                     new Alternativa{ Correta = true, Descricao = "ÁRVORE" },
@@ -308,7 +309,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 25,
                 Enunciado = "O Coliseu é um monumento histórico de que cidade européia?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "PARIS" },
                     new Alternativa{ Correta = false, Descricao = "COPENHAGUE" },
@@ -320,7 +321,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 26,
                 Enunciado = "Quem foi eleito presidente da África do Sul em 1994?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "NELSON PIQUET" },
                     new Alternativa{ Correta = true, Descricao = "NELSON MANDELA" },
@@ -332,7 +333,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 27,
                 Enunciado = "Quantos quilates tem o ouro puro?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "18" },
                     new Alternativa{ Correta = false, Descricao = "20" },
@@ -344,7 +345,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 28,
                 Enunciado = "Segundo a crença popular, a mula-sem-cabeça é mulher de quem?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "DO COROINHA" },
                     new Alternativa{ Correta = true, Descricao = "DO PADRE" },
@@ -356,7 +357,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 29,
                 Enunciado = "Que atriz protagonizou o filme “Titanic”?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "CAMERON DIAZ" },
                     new Alternativa{ Correta = true, Descricao = "KATE WINSLET" },
@@ -368,7 +369,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 30,
                 Enunciado = "Como é chamada a doença que causa perda desigual da melanina?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "ASTIGMATISMO" },
                     new Alternativa{ Correta = false, Descricao = "TENDINITE" },
@@ -380,7 +381,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 31,
                 Enunciado = "No filme, quem era parceiro de crimes da Bonnie?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "BILL" },
                     new Alternativa{ Correta = true, Descricao = "CLYDE" },
@@ -392,7 +393,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 32,
                 Enunciado = "Quem é o parceiro de aventuras de Dom Quixote?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "SANCHO PANÇA" },
                     new Alternativa{ Correta = false, Descricao = "GUILHERME TELL" },
@@ -404,7 +405,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 33,
                 Enunciado = "Nas histórias do Snoopy, qual é o nome do passarinho?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "PIU-PIU" },
                     new Alternativa{ Correta = true, Descricao = "WOODSTOCK" },
@@ -416,7 +417,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 34,
                 Enunciado = "Que planta era usada para fabricação de papel no antigo Egito?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "PAPIRO" },
                     new Alternativa{ Correta = false, Descricao = "EUCALIPTO" },
@@ -428,7 +429,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 35,
                 Enunciado = "Quem pintou o quadro “La Gioconda”, conhecido como “Mona Lisa”?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "LEONARDO DA VINCI" },
                     new Alternativa{ Correta = false, Descricao = "TICIANO" },
@@ -438,9 +439,9 @@ namespace MauiAppShowDoMilhao
             },
             new Pergunta
             {
-                Id = 36,
+                Id = 36,    
                 Enunciado = "Quando começou e terminou a Primeira Guerra Mundial?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "1914-1919" },
                     new Alternativa{ Correta = false, Descricao = "1939-1945" },
@@ -452,7 +453,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 37,
                 Enunciado = "Quem introduziu o futebol no Brasil?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "PELÉ" },
                     new Alternativa{ Correta = false, Descricao = "JOÃO HAVELANGE" },
@@ -464,7 +465,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 38,
                 Enunciado = "Que colônia britânica foi devolvida à China em 1997?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "PEQUIM" },
                     new Alternativa{ Correta = false, Descricao = "HANÓI" },
@@ -476,7 +477,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 39,
                 Enunciado = "Como é chamado o objeto falsificado vendido como original?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "PIRARUCU" },
                     new Alternativa{ Correta = false, Descricao = "PERNETA" },
@@ -488,7 +489,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 40,
                 Enunciado = "Qual é o nome original do filme “O médico e o monstro”?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "MASTERS E JOHNSON" },
                     new Alternativa{ Correta = true, Descricao = "DR. JEKYLL E MR. HYDE" },
@@ -504,7 +505,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 41,
                 Enunciado = "Em qual espécie o macho choca os ovos e a fêmea procura alimento?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "ANDORINHA" },
                     new Alternativa{ Correta = false, Descricao = "PATO SELVAGEM" },
@@ -517,7 +518,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 42,
                 Enunciado = "Em qual país está localizado o “Muro das lamentações”?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "ALEMANHA" },
                     new Alternativa{ Correta = false, Descricao = "BRASIL" },
@@ -529,7 +530,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 43,
                 Enunciado = "Onde nasceu Van Gogh, o grande pintor impressionista?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "POLÔNIA" },
                     new Alternativa{ Correta = false, Descricao = "FRANÇA" },
@@ -541,7 +542,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 44,
                 Enunciado = "O que significa literalmente Perestroika?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "CONVERSÃO" },
                     new Alternativa{ Correta = false, Descricao = "INVOLUÇÃO" },
@@ -553,7 +554,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 45,
                 Enunciado = "Qual oceano tem o maior volume de água?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "ATLÂNTICO" },
                     new Alternativa{ Correta = true, Descricao = "PACÍFICO" },
@@ -565,7 +566,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 46,
                 Enunciado = "Qual foi o último presidente militar do Brasil?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "FERNANDO COLLOR" },
                     new Alternativa{ Correta = true, Descricao = "JOÃO FIGUEIREDO" },
@@ -577,7 +578,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 47,
                 Enunciado = "Quem escreveu “Ulisses” em 1922?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "ERNEST HEMINGWAY" },
                     new Alternativa{ Correta = false, Descricao = "MARCEL PROUST" },
@@ -589,7 +590,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 48,
                 Enunciado = "Como é chamada a bola de gelo e poeira que orbita em torno do sol?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "COMETA" },
                     new Alternativa{ Correta = false, Descricao = "METEORITO" },
@@ -601,7 +602,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 49,
                 Enunciado = "A eletrônica é parte de qual ciência?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "FÍSICA" },
                     new Alternativa{ Correta = false, Descricao = "BIOLOGIA" },
@@ -614,7 +615,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 50,
                 Enunciado = "Que figura mitológica é conhecida por sua força extraordinária?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "ÁTILA" },
                     new Alternativa{ Correta = false, Descricao = "MINOTAURO" },
@@ -626,7 +627,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 51,
                 Enunciado = "A que país pertence a ilha de Terra Nova?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "ESTADOS UNIDOS" },
                     new Alternativa{ Correta = false, Descricao = "DINAMARCA" },
@@ -638,7 +639,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 52,
                 Enunciado = "Na criação do Estado do Tocantins, que estado teve o território reduzido?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "GOIÁS" },
                     new Alternativa{ Correta = false, Descricao = "MATO GROSSO" },
@@ -650,7 +651,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 53,
                 Enunciado = "“Arábica” e “robusta” são tipos de quê?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "UVA" },
                     new Alternativa{ Correta = true, Descricao = "CAFÉ" },
@@ -662,7 +663,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 54,
                 Enunciado = "Em que ano Ayrton Senna venceu o primeiro campeonato de Fórmula 1?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "1987" },
                     new Alternativa{ Correta = false, Descricao = "1990" },
@@ -674,7 +675,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 55,
                 Enunciado = "Que símbolo está desenhado no centro da bandeira Argentina?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "SOL" },
                     new Alternativa{ Correta = false, Descricao = "LUA" },
@@ -686,7 +687,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 56,
                 Enunciado = "De quem é a frase ”Penso, logo existo”?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "PLATÃO" },
                     new Alternativa{ Correta = false, Descricao = "JÚLIO VERNE" },
@@ -698,7 +699,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 57,
                 Enunciado = "Quem construiu o primeiro telescópio astronômico completo?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "CYRUS MCCORMICK" },
                     new Alternativa{ Correta = false, Descricao = "THOMAS EDISON" },
@@ -710,7 +711,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 58,
                 Enunciado = "A quem se atribui a frase “Eu sou o Estado”?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "LUIZ XIV" },
                     new Alternativa{ Correta = false, Descricao = "LUIZ XV" },
@@ -722,7 +723,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 59,
                 Enunciado = "Quem foi aluno de Platão e tutor de Alexandre, o Grande?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "PITÁGORAS" },
                     new Alternativa{ Correta = false, Descricao = "DIDEROT" },
@@ -734,7 +735,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 60,
                 Enunciado = "Em que ano foi inaugurada a estátua do Cristo Redentor no Rio de Janeiro?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "1921" },
                     new Alternativa{ Correta = false, Descricao = "1931" },
@@ -750,7 +751,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 61,
                 Enunciado = "Como se chama o explorador de grutas e cavernas?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = true, Descricao = "ESPELEÓLOGO" },
                     new Alternativa{ Correta = false, Descricao = "AGROSTÓLOGO" },
@@ -762,7 +763,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 62,
                 Enunciado = "O que procurava Juan Ponce de Leon quando descobriu a Flórida?",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "A CIDADE PERDIDA DE OURO" },
                     new Alternativa{ Correta = true, Descricao = "A FONTE DA JUVENTUDE" },
@@ -774,7 +775,7 @@ namespace MauiAppShowDoMilhao
             {
                 Id = 63,
                 Enunciado = "Nova Caledônia faz parte da:",
-                Alternativas = new()
+                Alternativa = new()
                 {
                     new Alternativa{ Correta = false, Descricao = "MICRONÉSIA" },
                     new Alternativa{ Correta = true, Descricao = "MELANÉSIA" },
@@ -879,6 +880,16 @@ namespace MauiAppShowDoMilhao
             InitializeComponent();
 
             MainPage = new AppShell();
+        }
+
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            var window = base.CreateWindow(activationState);
+
+            window.Width = 400;
+            window.Height = 600;
+
+            return window;
         }
     }
 }
