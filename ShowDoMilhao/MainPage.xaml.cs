@@ -1,4 +1,5 @@
-﻿using Android.Media;
+﻿using MauiAppShowDoMilhao.Models;
+using Plugin.Maui.Audio;
 
 namespace ShowDoMilhao
 {
@@ -87,9 +88,13 @@ namespace ShowDoMilhao
                 case 15:
                     track = "15.wav";
                     break;
+                case 16:
+                    track = "16.wav";
+                    break;
             }
 
             AudioManager.Current.CreatePlayer(FileSystem.OpenAppPackageFileAsync(track).Result).Play();
+                FileSystem.OpenAppPackageFileAsync((track).Result).Play();
         }
 
         private async void Button_Clicked_Proxima(object sender, EventArgs e)
@@ -136,6 +141,9 @@ namespace ShowDoMilhao
 
             if (acertou)
             {
+                Stream track = FileSystem.OpenAppPackageFileAsync(".wav").Result;
+                AudioManager.Current.CreatePlayer(track).Play();
+
                 await DisplayAlert("ACERTOU!", resp, "OK");
                 pergunta_count++;
                 toca_som();
@@ -144,6 +152,9 @@ namespace ShowDoMilhao
             }
             else
             {
+                Stream track = FileSystem.OpenAppPackageFileAsync(".wav").Result;
+                AudioManager.Current.CreatePlayer(track).Play();
+
                 await DisplayAlert("ERROU!", "Você perdeu", "OK");
                 premio = 0;
                 pergunta_count = 1;
